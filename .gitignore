@@ -1,14 +1,12 @@
+# Ignore Gradle project-specific cache directory
 .gradle
-/build/
 
-# Ignore Gradle GUI config
-gradle-app.setting
+# Ignore Visual Studio Code project-specific cache directory
+.vscode
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
+# Ignore Gradle build output directories
+build
+bin
 
-# Cache of project
-.gradletasknamecache
-
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
+# Ignore Gradle wrapper jar
+gradle/wrapper/gradle-wrapper.jar
