@@ -17,7 +17,10 @@ public class App {
         String op1 = menuHandler.getFirstOperand();
         String op2 = menuHandler.getSecondOperand();
         ArithmeticHandler handler = new ArithmeticHandler();
-        return handler.performOp(operator, Double.valueOf(op1), Double.valueOf(op2));
+
+        // Save the result in a var just to modify the code.
+        Double result = handler.performOp(operator, Double.valueOf(op1), Double.valueOf(op2));
+        return result;
     }
 
     public static void main(String[] args) throws IOException {
