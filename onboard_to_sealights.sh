@@ -4,7 +4,7 @@
 # Create the build session
 # Run this from the calculator repo root dir...
 java -jar sealights/sl-build-scanner.jar -gradle \
-    -configfile sealights/sl-gradle.json \
+    -configfile sl-gradle.json \
     -workspacepath app
 
 # Build and run unit tests
@@ -12,7 +12,8 @@ gradle clean build
 
 # Restore the build.gradle file
 # Run this from the calculator repo root dir...
-java -jar sealights/sl-build-scanner.jar -restoreGradle -workspacepath app
+java -jar sealights/sl-build-scanner.jar -restoreGradle \
+    -workspacepath app
 
 # Manual tests
 #
