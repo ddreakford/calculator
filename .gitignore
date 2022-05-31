@@ -1,12 +1,16 @@
-# Ignore Gradle project-specific cache directory
+# Gradle project-specific cache directory
 .gradle
 
-# Ignore Visual Studio Code project-specific cache directory
+# Visual Studio Code project-specific cache directory
 .vscode
 
-# Ignore Gradle build output directories
+# Gradle build output directories
 build
 bin
 
-# Ignore Gradle wrapper jar
+# Gradle wrapper jar
 gradle/wrapper/gradle-wrapper.jar
+
+# Sealights agent files
+sealights
+buildSessionId.txt

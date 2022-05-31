@@ -21,6 +21,14 @@ public class AppTest {
         assertEquals(result, Double.valueOf(13));
     }
 
+    @Test public void testAppAdd() {
+        InputStream is = getClass().getResourceAsStream("menu_choice_add.txt");
+        MenuHandler menuHandler = new MenuHandler(is);
+        App calculator = new App();
+        Double result = calculator.run(menuHandler);
+        assertEquals(result, Double.valueOf(13));
+    }
+
     @Test public void testSubtract() {
         InputStream is = getClass().getResourceAsStream("menu_choice_subtract.txt");
         MenuHandler menuHandler = new MenuHandler(is);
