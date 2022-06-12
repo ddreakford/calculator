@@ -3,8 +3,12 @@
 
 # Download the SeaLights Java agent
 cd $PROJECT_ROOT_DIR
+rm -rf sealights
+mkdir sealights
 wget -nv https://agents.sealights.co/sealights-java/sealights-java-latest.zip
-unzip -oq sealights-java-latest.zip
+unzip -o -d sealights sealights-java-latest.zip
+cp $AGENT_TOKEN_FILE sealights/
+rm sealights-java-latest.zip
 
 # Build/update the sl-gradle.json file
 # (This step is usually done as part of CI automation)
